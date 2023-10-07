@@ -1,0 +1,432 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar{
+  display: none
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family:'Poppins', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+  padding-left: 9px;
+  font-weight: bold;
+}
+
+nav i {
+  font-size: 25px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 9px
+}
+
+.line1 {
+  width: 4.7%;
+  height: 3px;
+  position: absolute;
+  background: cyan;
+  top: 4.5%;
+  left: 79.3%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 2px 0 2px;
+}
+
+.line2 {
+  width: 4.7%;
+  height: 3px;
+  position: absolute;
+  background: cyan;
+  top: 4.5%;
+  left: 85%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 2px 0 2px;
+}
+
+.line3 {
+  width: 6%;
+  height: 3px;
+  position: absolute;
+  background: cyan;
+  top: 4.5%;
+  left: 91%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 2px 0 2px;
+}
+
+nav a:hover + .line1 {
+  opacity: 1
+}
+
+nav a:hover + .line2 {
+  opacity: 1
+}
+nav a:hover + .line3 {
+  opacity: 1;
+}
+
+
+.title{
+  flex: 1 1 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 30%;
+  left: -1%;
+  font-family: "Poppins", "Gill Sans";
+  overflow: hidden;
+}
+
+.slider {
+  display: inline-block;
+  height: 1.5em;
+  overflow: hidden;
+  vertical-align: middle;
+  mask-image: linear-gradient(transparent, black, black, black, transparent);
+  mask-type: luminance;
+  mask-mode: alpha;
+}
+
+.words {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation-name: slice;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  background: linear-gradient(to right, #156cef, #0fc7db);
+  background-clip: none;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 700px 700px;
+}
+
+.word {
+  display: block;
+  line-height: 1.3em;
+  text-align: left;
+}
+
+
+@keyframes slice {
+  0%,
+  27% {
+    transform: translateY(0%);
+  }
+ 
+  33%,
+  60% {
+    transform: translateY(-33%);
+  }
+
+  66%,
+  93% {
+    transform: translateY(-66%);
+  }
+
+}
+.desc {
+  font-size: 15px;
+  font-family: "Poppins", "Gill Sans";
+  top: 46%;
+  left: 12%;
+  position: absolute;
+}
+
+/*.coder-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px 10px 10px 10px;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}*/
+
+.about-me {
+  font-family: "Poppins", "Gill Sans";
+}
+
+.aboutme-desc {
+  position: absolute;
+  top: 100%;
+  left: 1%;
+  columns: 2;
+}
+
+.about {
+  position: absolute;
+  top: 90%;
+  left: 45%
+}
+
+.skills{
+ font-family: "Poppins", "Gill Sans";
+ font-weight: bold;
+}
+.skills-name {
+  position: absolute;
+  top: 140%;
+  left: 47%
+}
+
+.html-svg {
+  position: absolute;
+  top: 160%;
+  left: 10%;
+}
+
+.css-svg {
+  position: absolute;
+  top: 160%;
+  left: 35%
+}
+
+.js-svg {
+  position: absolute;
+  top: 160%;
+  left: 60%
+}
+
+.react-svg {
+  position: absolute;
+  top: 160%;
+  left: 83%
+}
+
+.contact-container {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 200%;
+  left: 30%;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 0 20px;
+
+}
+
+.contact-title {
+  font-family: "Poppins", "Gill Sans";
+  top: -1%;
+  left: 28%;
+  position: absolute;
+}
+
+.name {
+  width: 350px;
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  border-radius: 10px 10px 10px 10px
+}
+
+.email {
+  width: 350px;
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  border-radius: 10px 10px 10px 10px
+}
+
+.message {
+  width: 350px;
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  border-radius: 10px 10px 10px 10px
+}
+
+.submit {
+  width: 200px;
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  position: absolute;
+  top: 84%;
+  left: 30%;
+  border-radius: 20px 10px 20px 10px;
+  cursor: pointer;
+}
+/* Extra small phones (less than 576px) */
+@media screen and (max-width: 575px) {
+  .title {
+    font-size: 18px;
+    top: 10%;
+    left: -9%
+  }
+
+  .desc {
+    font-size: 12px;
+    top: 15%;
+  }
+
+  .coder-img {
+    width: 150px; /* Adjusted size */
+    height: 150px; /* Adjusted size */
+    top: 34%; /* Adjusted position */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about{
+   top: 49%;
+   left: 30%
+  }
+
+  .aboutme-desc {
+    columns: 1;
+    top: 55%; /* Adjusted position */
+    left: 10%;
+    width: 80%;
+    transform: translateX(0%);
+  }
+
+  .skills-name {
+    top: 113%; /* Adjusted position */
+  }
+
+  .html-svg, .css-svg, .js-svg, .react-svg {
+    top: 120%; /* Adjusted position */
+    
+  }
+}
+
+
+
+
+
+/* Small phones (576px to 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .title {
+    font-size: 24px;
+    top: 10%;
+  }
+
+  .desc {
+    font-size: 14px;
+    top: 20%;
+  }
+
+  .coder-img {
+    width: 120px;
+    height: 120px;
+    top: 30%;
+  }
+
+  .aboutme-desc {
+    columns: 1;
+    top: 70%;
+  }
+
+  .skills-name {
+    top: 85%;
+  }
+
+  .html-svg, .css-svg, .js-svg, .react-svg {
+    top: 100%;
+  }
+}
+
+/* Medium phones (768px to 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .title {
+    font-size: 28px;
+    top: 10%;
+  }
+
+  .desc {
+    font-size: 14px;
+    top: 20%;
+  }
+
+  .coder-img {
+    width: 150px;
+    height: 150px;
+    top: 30%;
+  }
+
+  .aboutme-desc {
+    columns: 1;
+    top: 70%;
+  }
+
+  .skills-name {
+    top: 85%;
+  }
+
+  .html-svg, .css-svg, .js-svg, .react-svg {
+    top: 100%;
+  }
+}
+
+/* Large phones (992px to 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .title {
+    font-size: 32px;
+    top: 10%;
+  }
+
+  .desc {
+    font-size: 16px;
+    top: 20%;
+  }
+
+  .coder-img {
+    width: 180px;
+    height: 180px;
+    top: 30%;
+  }
+
+  .aboutme-desc {
+    columns: 1;
+    top: 70%;
+  }
+
+  .skills-name {
+    top: 85%;
+  }
+
+  .html-svg, .css-svg, .js-svg, .react-svg {
+    top: 100%;
+  }
+}
