@@ -28,7 +28,7 @@
       <div class="line1"></div>
       <a href="#about-me">About</a>
       <div class="line2"></div>
-      <a href="/contact">Contact</a>
+      <a href="#contact">Contact</a>
       <div class="line3"></div>
       <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
     </nav>
@@ -153,34 +153,58 @@
         />
       </svg>
     </div>
-    <div class="contact-container">
-      <form
-        action="https://formsubmit.co/mohamedahmedelsaadi@gmail.com"
-        method="POST"
-      >
-        <h1 class="contact-title">CONTACT ME</h1>
-        <input
-          type="text"
-          id="name"
-          placeholder="Your Name"
-          required
-          class="name"
-        />
-        <input
-          type="email"
-          id="email"
-          placeholder="Email Address"
-          required
-          class="email"
-        />
-        <textarea
-          id="message"
-          rows="4"
-          placeholder="How can I help you?"
-          class="message"
-        ></textarea>
-        <button type="submit" class="submit">Send</button>
-      </form>
+    <div class="contact-box">
+      <h1 class="contact-intro">
+        Lets Get In <span class="cnt-touch">Touch!</span>
+      </h1>
+      <h2 class="cnt-desc">Here's abit about me:</h2>
+      <p class="cnt-about">
+        Greetings! I'm Moe, a dedicated Frontend Developer<br />
+        with an unquenchable thirst for all things tech.With a<br />
+        strong foundation in web development and a passion<br />
+        for creating seamless user experiences, I've made it<br />
+        my mission to bridge the gap between design and<br />
+        functionality.
+      </p>
+      <div class="contact-container" id="contact">
+        <form
+          action="https://formsubmit.co/mohamedahmedelsaadi@gmail.com"
+          method="POST"
+        >
+          <h1 class="contact-title">CONTACT ME</h1>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="name"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            class="email"
+          />
+          <textarea
+            id="message"
+            rows="4"
+            name="msg"
+            placeholder="How can I help you?"
+            class="message"
+          ></textarea>
+          <button class="submitBtn" type="submit">
+            Send
+            <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow">
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
